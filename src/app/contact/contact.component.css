@@ -1,0 +1,91 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+    color:#e3e6eb;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+  }
+  .contact-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 5px;
+    background-color: rgb(35, 1, 252);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-heading:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the link */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .social-link:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .linkedin-link {
+    color: #0077b5; /* LinkedIn Blue */
+  }
+  
+  .git-link {
+    color: #333; /* GitHub Gray */
+  }
+  
+  .insta-link {
+    color: #c32aa3; /* Instagram Pink */
+  }
+  
+  .mail-link {
+    color: #333; /* Mail Gray */
+  }
+ 
+  
+  .linkedin-link:hover {
+    color: #005582; /* Darker LinkedIn Blue */
+  }
+  
+  .git-link:hover {
+    color: #444; /* Darker GitHub Gray */
+  }
+  
+  .insta-link:hover {
+    color: #a0267c; /* Darker Instagram Pink */
+  }
+  
+  .mail-link:hover {
+    color: #555; /* Darker Mail Gray */
+  }
+  

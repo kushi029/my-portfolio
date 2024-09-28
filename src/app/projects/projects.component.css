@@ -1,0 +1,149 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projects-heading {
+    font-size: 2rem;
+    color:#e3e6eb;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .projects-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 5px;
+    background-color: rgb(35, 1, 252);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .projects-heading:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  
+  .project-card {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    /* Updated box-shadow */
+    box-shadow: 0 8px 15px rgb(2, 2, 238); /* Example for a blue shadow */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease; /* Optional: for a smooth transition effect */
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 0.6s forwards; /* Fade-in animation */
+}
+
+/* Enhanced fade-in keyframes with scaling and rotation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) rotate(-10deg); /* Start smaller and slightly rotated */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg); /* End at original size and no rotation */
+    }
+}
+
+/* Optional: Add hover effect to enhance visibility */
+.project-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 255, 0.4); /* Darker blue shadow on hover */
+}
+
+  
+  .project-image {
+    width: 100%;
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area and maintains aspect ratio */
+    background-color: white; /* Background to maintain consistent layout */
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .project-details {
+    padding: 15px; /* Padding remains fixed */
+    flex: 1; /* Ensures the details section takes up the remaining space */
+    display: flex; /* Allows for better control of the layout */
+    flex-direction: column; /* Ensure vertical stacking of content */
+    justify-content: space-between; /* Keeps content balanced and spaced */
+  }
+  
+  
+  .project-name {
+    font-size: 1.5rem;
+    color: rgb(0, 170, 255);
+    margin: 0; 
+    margin-top: 12x;
+  }
+  
+  .project-technologies {
+    font-size: 1rem;
+    color: whitesmoke; /* Lighter shade for technologies text */
+    margin: 5px 0; /* Spacing above and below the technologies */
+  }
+  
+  .project-description {
+    padding: 10px 0;
+    color: #a7b4c8;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px; /* Ensure the footer has some padding */
+  }
+  
+  .project-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    flex: 1; /* Make buttons equal width */
+    margin: 0 5px; /* Add margin between buttons */
+  }
+  
+  .primary-button {
+    color: rgba(0, 60, 255, 0.806); /* Using the orange color */
+  }
+  
+  .secondary-button {
+    color: #f7f9fd; /* Use a shade of gray for secondary button */
+  }
+  
+  /* Make cards stack vertically on smaller screens */
+  @media (max-width: 900px) {
+    .project-card {
+      width: calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .project-card {
+      width: 100%; /* Stack cards on top of each other on small screens */
+    }
+  }
+  
