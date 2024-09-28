@@ -1,0 +1,48 @@
+<div class="contact-container">
+    <h2 class="contact-heading">Contact Me</h2>
+    <div class="social-links">
+      <a
+        href="https://www.linkedin.com/in/kushi-nataraj-20077725b"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link linkedin-link"
+        (mouseenter)="showTooltip($event, 'Linkedin')"
+        (mouseleave)="hideTooltip($event)"
+      >
+        <i class="fab fa-linkedin-in fa-2xl"></i>
+        <span class="tooltip-text">Linkedin</span>
+      </a>
+      <a
+        href="https://github.com/kushi029"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link git-link"
+        (mouseenter)="showTooltip($event, 'Github')"
+        (mouseleave)="hideTooltip($event)"
+      >
+        <i class="fab fa-github fa-2xl"></i>
+        <span class="tooltip-text">Github</span>
+      </a>
+      <a
+        href="https://www.instagram.com/_kushi_n_/?hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link insta-link"
+        (mouseenter)="showTooltip($event, 'Instagram')"
+        (mouseleave)="hideTooltip($event)"
+      >
+        <i class="fab fa-instagram fa-2xl"></i>
+        <span class="tooltip-text">Instagram</span>
+      </a>
+      <a
+        href="mailto:kushinataraj13@gmail.com"
+        class="social-link mail-link"
+        (mouseenter)="showTooltip($event, 'E-mail')"
+        (mouseleave)="hideTooltip($event)"
+      >
+        <i class="fas fa-envelope fa-2xl"></i>
+        <span class="tooltip-text">E-mail</span>
+      </a>
+    </div>
+  </div>
+  

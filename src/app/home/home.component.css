@@ -1,0 +1,102 @@
+/* Style for the main home content */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding-top: 100px; /* To account for the fixed navbar */
+    text-align: center;
+  }
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    z-index: -1; /* Send to back */
+  }
+  
+  .intro-heading {
+    font-size: 3rem; /* Large font for the introduction */
+    font-weight: bold;
+    color: #e3e6eb;
+    margin-bottom: 20px;
+  }
+  
+  .intro-description {
+    font-size: 2rem; /* Smaller font for the description */
+    color: #64748b;
+    margin-bottom: 40px;
+  }
+  
+  .resume-button {
+    padding: 10px 20px;
+    background-color: rgb(0, 191, 255);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: blue;
+  }
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loader-text {
+    font-size: 60px;
+    color: #fff;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .loader-text span {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  .loader-text span:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .loader-text span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loader-text span:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .loader-text span:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .loader-text span:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  /* Animation for the loader */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

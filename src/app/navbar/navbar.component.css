@@ -1,0 +1,53 @@
+/* Style for the fixed navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; /* Slate-900 color */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+  }
+  
+  /* Navbar container */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 64px;
+  }
+  
+  /* Brand or Logo */
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Links container */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Navbar links */
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for links */
+  .navbar-links a:hover {
+    color: rgb(0, 238, 255); /* Amber-500 color for hover */
+  }
+  .fas.fa-user::before, .fas.fa-home::before, .fas.fa-briefcase::before, .fas.fa-folder::before, .fas.fa-envelope::before {
+    padding-right: 10px;
+  }

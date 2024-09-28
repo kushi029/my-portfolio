@@ -1,0 +1,116 @@
+@keyframes zoom-out {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9); /* Scale down */
+      opacity: 0.8; /* Slightly reduce opacity */
+    }
+  }
+  
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0.9); /* Start scaled down */
+      opacity: 0.8; /* Start with reduced opacity */
+    }
+    100% {
+      transform: scale(1); /* Scale to original size */
+      opacity: 1; /* Full opacity */
+    }
+  }
+  
+  .about-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack heading and content vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 40px; /* Adjust padding as needed */
+    max-width: 900px; /* Set a max width for the overall container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .about-heading {
+    font-size: 2rem; /* Adjust font size as needed */
+    color:#e3e6eb; /* Heading color */
+    margin-bottom: 30px; /* Add space below the heading */
+    position: relative; /* Position relative for the underline effect */
+    text-align: center; /* Center the heading text */
+    animation: zoom-in 0.5s ease forwards; /* Apply zoom-in animation */
+  }
+  
+  /* Pseudo-element for the underline effect */
+  .about-heading::after {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left of the text */
+    right: 0; /* Align it to the right of the text */
+    bottom: -5px; /* Position it below the text */
+    height: 5px; /* Height of the underline */
+    background-color: rgb(35, 1, 252); /* Underline color */
+    transform: scaleX(0); /* Start with scale 0 for animation */
+    transition: transform 0.3s ease; /* Animation for scaling */
+  }
+  
+  /* Scale up underline on hover */
+  .about-heading:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+  }
+  
+  .about-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Align image and text vertically */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 900px; /* Set max-width for proper centering */
+    gap: 20px; /* Add spacing between image and description */
+  }
+  
+  .about-photo {
+    flex: 1; /* Set equal space for the image */
+    max-width: 300px; /* Max width for the photo */
+    overflow: hidden; /* Prevent overflow */
+    padding: 32px;
+  }
+  
+  .about-photo img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.5s ease; /* Zoom effect on hover */
+    animation: zoom-in 0.5s ease forwards; /* Apply zoom-in animation */
+    border-radius: 20px;
+  }
+  
+  .about-photo img:hover {
+    transform: scale(1.1); /* Zoom effect */
+  }
+  
+  .about-description {
+    flex: 2; /* Set more space for the text */
+    text-align: justify; /* Justify the text */
+    max-width: 500px; /* Limit max-width for better readability */
+    animation: zoom-in 0.5s ease forwards; /* Apply zoom-in animation */
+  }
+  
+  .about-paragraph {
+    font-size: 20px; /* Font size */
+    color: whitesmoke; /* Text color */
+    margin-top: 0; /* Adjust margin */
+    line-height: 1.6; /* Line height for readability */
+    padding: 32px;
+    padding-bottom: 20px;
+    width: 500px;
+  }
+  .skillset {
+    color: whitesmoke ;
+    font-size: 16px;
+    margin-top: 0; /* Adjust margin */
+    line-height: 1.6; /* Line height for readability */
+    width: 500px;
+
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  
