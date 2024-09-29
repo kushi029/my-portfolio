@@ -18,15 +18,15 @@
     left: 0;
     right: 0;
     bottom: -5px;
-    height: 5px;
-    background-color: rgb(35, 1, 252);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+    height: 4px; /* Adjust the height as per your preference */
+    background-color: rgb(35, 1, 252); /* Color of the underline */
+    transform: scaleX(1); /* Full width of the underline */
+    border-radius: 2px;
   }
   
-  .contact-heading:hover::after {
-    transform: scaleX(1);
-  }
+  
+  
+  
   
   .social-links {
     display: flex;
