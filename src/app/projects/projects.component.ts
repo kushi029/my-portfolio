@@ -16,7 +16,7 @@ export class ProjectsComponent {
     {
       name: 'Github-User-Search',
       description:
-        'GitHub User Search app enables users to search for GitHub profiles, displaying detailed information.',
+        'A dynamic GitHub User Search application built with Angular for real-time profile and repository lookup, providing instant access to user details and repositories based on search queries.',
       technologies: 'Technology used: Angular',
       imageUrl: 'assets/images/github.png',
       websiteUrl: 'https://githubusersearch-kushi.netlify.app/',
@@ -25,7 +25,7 @@ export class ProjectsComponent {
     {
       name: 'Todo-List',
       description:
-        'Todo List app allows users to manage tasks by adding, prioritizing, and tracking due dates with an intuitive interface.',
+        'A Todo List app built with Angular for managing tasks, allowing users to efficiently add, delete, prioritize, and track due dates with an intuitive and user-friendly interface.',
       technologies: 'Technology used: Angular',
       imageUrl: 'assets/images/todo.png',
       websiteUrl: 'https://todo-list-kushi-n.netlify.app/',
