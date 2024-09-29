@@ -40,20 +40,15 @@
   
   /* Pseudo-element for the underline effect */
   .about-heading::after {
-    content: ""; /* Required for pseudo-element */
-    position: absolute; /* Position it absolutely */
-    left: 0; /* Align it to the left of the text */
-    right: 0; /* Align it to the right of the text */
-    bottom: -5px; /* Position it below the text */
-    height: 5px; /* Height of the underline */
-    background-color: rgb(35, 1, 252); /* Underline color */
-    transform: scaleX(0); /* Start with scale 0 for animation */
-    transition: transform 0.3s ease; /* Animation for scaling */
-  }
-  
-  /* Scale up underline on hover */
-  .about-heading:hover::after {
-    transform: scaleX(1); /* Scale to full width on hover */
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 4px; /* Adjust the height as per your preference */
+    background-color: rgb(35, 1, 252); /* Color of the underline */
+    transform: scaleX(1); /* Full width of the underline */
+    border-radius: 2px;
   }
   
   .about-content {
